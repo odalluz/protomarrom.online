@@ -70,6 +70,28 @@ src="https://www.facebook.com/tr?id=432349348482080&ev=PageView&noscript=1"
 
             <!-- VSL -->
           <div id="vid_62e0b7bcc0e469000aa6d90d" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62e0b7bcc0e469000aa6d90d" src="https://images.converteai.net/8987c970-76c3-4782-bc4a-896e7a1bce03/players/62e0b7bcc0e469000aa6d90d/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62e0b7bcc0e469000aa6d90d" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62e0b7bcc0e469000aa6d90d">var s=document.createElement("script");s.src="https://scripts.converteai.net/8987c970-76c3-4782-bc4a-896e7a1bce03/players/62e0b7bcc0e469000aa6d90d/player.js",s.async=!0,document.head.appendChild(s);</script>
+            <br><br><br>
+            <div id="viewers">
+  <span></span>  <canvas style="margin-left:1em;margin-right:1em;background-color: #00ff00;width:10px;height:10px;border-radius:100%"></canvas>pessoas estão assistindo a esse vídeo agora! 
+</div>
+<script>
+  document.querySelectorAll("#viewers span")[0].innerHTML = getUsersView();
+
+  setInterval(() => {
+    updatesUsersView();
+  }, 2500);
+
+  function getUsersView() {
+    return Math.floor(Math.random() * (Math.floor(910) - Math.ceil(690))) + Math.ceil(690);
+  }
+
+  function updatesUsersView() {
+    var currentUsers = document.querySelectorAll("#viewers span")[0].innerHTML;
+    var users = Math.floor(Math.random() * (Math.floor(40) - Math.ceil(-40))) + Math.ceil(-40);
+    currentUsers = parseInt(currentUsers) < 690 ? parseInt(currentUsers) + users * user : parseInt(currentUsers) + users;
+    document.querySelectorAll("#viewers span")[0].innerHTML = currentUsers;
+  }
+</script>
             
             <!-- Botão 1 -->
             <div id="cta1" class="mt-4 d-none">
