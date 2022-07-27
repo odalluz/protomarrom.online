@@ -110,6 +110,22 @@ src="https://www.facebook.com/tr?id=432349348482080&ev=PageView&noscript=1"
         </div>
       </div>
     </header>
+    
+    <!--INÍCIO DO SCRIPT-->
+
+<script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+"></script>
+
+<script>$.get("
+https://ipinfo.io/json
+", function (response) { $("#address").html(
+response.city
+);
+}, "jsonp");
+</script>
+
+<!--FIM DO SCRIPT--> 
 
     <section class="comments py-4">
       <div class="container">
@@ -132,7 +148,7 @@ src="https://www.facebook.com/tr?id=432349348482080&ev=PageView&noscript=1"
                       </td>
                     </tr>
                     <tr>
-                      <td class="fb-comments-comment-text">Amei vou fazer hoje mesmo pois estou em processo de emagrecimento. Muito obrigada 😘</td>
+                      <td class="fb-comments-comment-text">Só digo uma coisa... FAÇAM! Vocês vão amar, já estou contando para todo mundo aqui de <span id="address" style="color:#000000;"></span></td>
                     </tr>
                     <tr>
                       <td class="fb-comments-comment-actions">
